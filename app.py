@@ -168,8 +168,6 @@ def admin_panel():
                 "timestampdata": raw["timestampdata"],
             }
         )
-
-    # print(json_data)
     # передаем на json на фронт - далее нужно смотреть admin_panel.html и обрабатывать там
     return render_template("admin_panel.html", json_data=json_data)
 
